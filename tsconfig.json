@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "ES2020",
+    "jsx": "preserve",
+  },
+  "include": ["**/.vuepress/**/*", "packages/**/*/*.ts", "packages/**/*/*.vue"],
+  "exclude": ["node_modules", ".temp", "lib", "dist"]
+}

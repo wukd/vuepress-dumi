@@ -1,0 +1,30 @@
+{
+  "name": "vuepress-plugin-dumi",
+  "version": "0.1.0",
+  "description": "📖 A dumi style theme for VuePress2.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wukd/vuepress-dumi.git"
+  },
+  "keywords": [
+    "vuepress-plugin",
+    "dumi"
+  ],
+  "author": "Stephen Woo <wukd@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wukd/vuepress-dumi/issues"
+  },
+  "homepage": "https://github.com/wukd/vuepress-dumi#readme",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "cpx2": "^4.2.0",
+    "vite": "^2.9.1"
+  }
+}

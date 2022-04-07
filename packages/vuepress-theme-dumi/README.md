@@ -35,3 +35,4 @@ This repo is inspired by the following projects, Thanks for their great work.
 - [dumi](https://github.com/umijs/dumi)
 - [@vuepress/theme-default](https://github.com/vuepress/vuepress-next/tree/main/packages/%40vuepress/theme-default)
 - [vuepress-theme-dumi](https://github.com/OrekiSH/vuepress-dumi)
+
