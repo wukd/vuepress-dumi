@@ -47,13 +47,14 @@ const nav = computed(() => {
   return userNav.value;
 });
 
-const userLinks = computed(() => {
-  return (nav.value || []).map((link) => {
-    return Object.assign(resolveNavLinkItem(link), {
-      items: (link.items || []).map(resolveNavLinkItem),
-    });
-  });
-});
+// const userLinks = computed(() => {
+//   return (userNav.value || []).map((link) => {
+//     return Object.assign(resolveNavLinkItem(link), {
+//       items: (link.items || []).map(resolveNavLinkItem),
+//     });
+//   });
+//   return []
+// });
 
 const repoLink = computed(() => {
   const { repo } = themeData.value;
@@ -83,9 +84,9 @@ const repoLabel = computed(() => {
 </script>
 
 <template>
-  <nav v-if="userLinks.length || repoLink" class="nav-links">
+  <nav v-if="nav.length || repoLink" class="nav-links">
     <!-- user links -->
-    <div v-for="item in userLinks" :key="item.link" class="nav-item">
+    <div v-for="item in nav" :key="item.link" class="nav-item">
       <DropdownLink v-if="item.type === 'links'" :item="item" />
       <AutoLink v-else :item="item" />
     </div>

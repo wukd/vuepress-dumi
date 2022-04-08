@@ -21,6 +21,7 @@ const props = defineProps({ sidebarItems: Array });
 </template>
 
 <style lang="stylus">
+@require '../styles/palette.styl';
 @require '../styles/wrapper.styl'
 
 .page
